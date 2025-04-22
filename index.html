@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Catraca - Titan GYM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Titan GYM</h1>
+    <label for="cpf">Digite seu CPF:</label>
+    <input type="text" id="cpf" placeholder="000.000.000-00" readonly>
+
+    <button class="btn-verificar" onclick="verificarCPF()">Verificar</button>
+
+    <div class="keypad">
+      <button class="key" onclick="addDigit('7')">7</button>
+      <button class="key" onclick="addDigit('8')">8</button>
+      <button class="key" onclick="addDigit('9')">9</button>
+      <button class="key" onclick="addDigit('4')">4</button>
+      <button class="key" onclick="addDigit('5')">5</button>
+      <button class="key" onclick="addDigit('6')">6</button>
+      <button class="key" onclick="addDigit('1')">1</button>
+      <button class="key" onclick="addDigit('2')">2</button>
+      <button class="key" onclick="addDigit('3')">3</button>
+      <button class="key" onclick="clearInput()">C</button>
+      <button class="key" onclick="addDigit('0')">0</button>
+      <button class="key" onclick="backspace()">←</button>
+    </div>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
